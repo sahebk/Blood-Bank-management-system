@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STAFF</title>
+  <link rel="stylesheet" href="staffstyle.css">
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Logo">
+    <h2 class="logo">𝕃𝕀𝔽𝔼𝕃𝕀ℕ𝔼 𝔻𝕆ℕ𝕆ℝ𝕊</h2>
+    <nav class="navigation">
+      <a href="home.html">Home<span class="icon"><ion-icon name="home"></ion-icon></span></a>
+      <a href="about.html">About</a>
+      <a href="donor.html">Donor</a>
+      <a href="recipient.html">Recipient</a>
+      
+    </nav>
+  </header>
+
+  <div class="content">
+    <center><h1>ENTER STAFF DETAILS</h1></center>
+    <form action="staff.php" method="post">
+      <table border="0" width="100%">
+        <tr>
+          <td><label for="staff_name">NAME <ion-icon name="person"></ion-icon> :</label></td>
+          <td><input type="text" id="staff_name" name="staff_name" required></td>
+        </tr>
+        <tr>
+          <td><label for="staff_position">POSITION <ion-icon name="briefcase"></ion-icon> :</label></td>
+          <td>
+           <select id="staff_position" name="staff_position" required>
+            <option value="none" selected disabled hidden> Select Position </option>
+             <option value="Manager">Manager</option>
+             <option value="Technician">Lab Technician</option>
+             <option value="Sample collectionist">Phlebotomist</option>
+             <option value="Technologist">Medical Technologist</option>
+             <option value="administrative staff">Receptionist</option>
+           </select>
+         </td>
+        </tr>
+        <tr>
+          <td><label for="staff_phno">PHONE NUMBER <ion-icon name="call"></ion-icon> :</label></td>
+          <td><input type="tel" id="staff_phno" name="staff_phno" pattern="[0-9]{10}" required></td>
+        </tr>
+        <tr>
+          <td><label for="staff_email">EMAIL <ion-icon name="mail"></ion-icon> :</label></td>
+          <td><input type="email" id="staff_email" name="staff_email"></td>
+        </tr>
+      </table>
+      <br>
+      <div style="display: flex;margin-left: 500px;">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+  </div>
+
+  <script src="homescript.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<html>
+    <head><title>Blood Group</title></head>
+    <body>
+        <form action="bloodGroupinCenter.php" method="post">
+            <p>Select Center Name</p>
+            <select id="staff_position" name="center_name" required>
+                <option value="none" selected disabled hidden> Select Position </option>
+                 <option value="City Blood Bank">City Blood Bank</option>
+                 <option value="Town Blood Center">Town Blood Center</option>
+                 <option value="Village Blood Drive">Village Blood Drive</option>
+                 </select><br>
+                 <p>Select Blood Type</p>
+                 <select id="bloodtype" name="bloodtype" required>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                  </select>   
+                  <input type="submit">  
+        </form>
+    </body>
+</html>

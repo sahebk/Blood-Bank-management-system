@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sidebar with dropdown</title>
+    <link rel="stylesheet" href="homestyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="headline">
+        <h1>Welcome to LifeLine Donors Organization</h1>  
+    </div>
+    <div class="box-section">
+    <div class="mission-box">
+       <h2>Our Mission</h2>
+       <p>
+         Lifeline Donors is dedicated to saving lives by promoting voluntary blood donations. 
+         We strive to ensure a stable and safe blood supply for patients in need and advocate 
+         for the importance of regular blood donations in our community.
+       </p>
+     </div>
+     <div class="service-box">
+        <h2>Our Services</h2>
+        <ul>
+          <li>Regular blood donation drives</li>
+          <li>Blood donation education and awareness programs</li>
+          <li>Support for blood recipients and their families</li>
+          <li>Collaboration with healthcare providers for safe blood transfusion practices</li>
+        </ul>
+      </div>
+    <div class="criteria">
+        <h3>Who can donate blood?</h3>
+        <h5>Most people are able to give blood, but only 4% actually do. You can donate blood if you:
+            <ul>
+                <li>are fit and healthy</li>
+                <li>weight atleast 50kg</li>
+                <li>are 18-70 years old</li>
+                <li>are over 70 and have given blood in the last two years</li>
+            </ul>
+        </h5>
+    </div>
+    <img src="pic8.jpg" alt="Image Description" class="image8">
+</div>
+
+
+<div>
+<img src="logo.png" alt="Logo" class="logo2">
+<h1 class="org-name">𝕃𝕀𝔽𝔼𝕃𝕀ℕ𝔼 𝔻𝕆ℕ𝕆ℝ𝕊</h1>
+</div>
+    <!--menu button-->
+    <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="side-bar">
+        <!--header section-->
+        <header>
+            <!--close button-->
+            <div class="close-btn">
+                <i class="fas fa-times"></i>
+            </div>
+            <img src="logo.png" alt="logo">
+            <!--logo-->
+            <h1>Lifeline donor</h1>
+        </header>
+        <!--menu items-->
+        <div class="menu">
+            <div class="item"><a href=""><i class="fas fa-desktop"></i>Home</a></div>
+            <div class="item"><a href="about.html"><i class="fas fa-table "></i>About</a></div>
+            <div class="item"><a class="sub-btn"><i class="fas fa-desktop"></i>Donor
+            <!--dropdown-->
+            <!--dropdown arrow-->
+            <i class="fas fa-angle-right dropdown"></i>
+            </a>
+            <div class="sub-menu">
+                <a href="dnrRetreive.php" class="sub-item">View Donors</a>
+                <a href="donor.html" class="sub-item">Donate Blood</a>
+            </div>  
+            </div>
+
+            <div class="item"><a class="sub-btn"><i class="fas fa-table "></i>Recipient
+            
+              <i class="fas fa-angle-right dropdown"></i>
+            </a>
+            <div class="sub-menu">
+              <a href="recipRtrv.php" class="sub-item">View Recipients</a>
+              <a href="recipient.html" class="sub-item">Apply for blood</a>
+            </div>
+            </div>
+
+            <div class="item"><a class="sub-btn"><i class="fas fa-table "></i>Staff and Manager
+            
+                <i class="fas fa-angle-right dropdown"></i>
+              </a>
+              <div class="sub-menu">
+                <a href="staff.html" class="sub-item">Entry of Staff</a>
+                <a href="staffInfo.php" class="sub-item">Staff details</a>
+                <a href="managerofCenter.html" class="sub-item">Manager details</a>
+              </div>
+              </div>
+
+              <div class="item"><a class="sub-btn"><i class="fas fa-table "></i>Blood details
+        
+                <i class="fas fa-angle-right dropdown"></i>
+              </a>
+              <div class="sub-menu">
+                <a href="bloodgrpinCenter.html" class="sub-item">• Blood availability</a>
+                <a href="bloodTransfusionperformed.html" class="sub-item">• Transfusion Performed</a>
+                <a href="specificbloodgrp.html" class="sub-item">• Specific Blood Group</a>
+                <a href="bloodbag.php" class="sub-item">• List of Bloodbag</a>
+              </div>
+              </div>
+
+
+              <div class="item"><a class="sub-btn"><i class="fas fa-table "></i>Social media links
+            
+                <i class="fas fa-angle-right dropdown"></i>
+              </a>
+              <div class="sub-menu">
+              
+                  <a href="https://www.facebook.com/profile.php?id=61557420510482"><i class="fab fa-facebook-f" style="color:blue;"></i>Facebook</a>
+                  <a href="https://twitter.com/lifelined0n0rs"><i class="fab fa-twitter" style="color:rgb(29, 161, 242);"></i>Twitter</a>
+                  <a href="https://www.instagram.com/lifelinedonor/"><i class="fab fa-instagram"style="color:#E4405F;"></i>Instagram</a>
+                  <a href="#"><i class="fab fa-youtube"style="color:#FF0000;"></i>Youtube</a>
+              </div>
+              </div>
+        </div>
+    </div>
+    <!--LOGIN BUTTON-->
+    <div class="wrapper">
+      <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+      <div class="form-box login">
+        <h2>Login</h2>
+        <form action="login.php" method="post">
+          <div class="input-box">
+            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+            <input type="email" name="email" required>
+            <label>Email</label>
+          </div>
+            <div class="input-box">
+              <span class="icon"><ion-icon name="lock-closed"></ion-icon>
+              </span>
+              <input type="password" name="password" required>
+              <label>Password</label>
+          </div>
+          <div class="remember-forgot">
+            <label><input type="checkbox">Remember me</label>
+            <a href="#">Forgot Password?</a>
+          </div>
+          <button type="submit" class="btn">Login</button>
+          <div class="login-register">
+            <p>Don't have an account? <a href="#form-box register" class="register-link">Register </a></p>
+          </div>
+        </form>
+      </div>
+  <!--User Registration-->
+      <div class="form-box register">
+        <h2>Register</h2>
+        <form action="registration.php">
+          <div class="input-box">
+            <span class="icon"><ion-icon name="person"></ion-icon></span>
+            <input type="text" required>
+            <label>Username</label>
+          </div>
+          <div class="input-box">
+            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+            <input type="email" required>
+            <label>Email</label>
+          </div>
+            <div class="input-box">
+              <span class="icon"><ion-icon name="lock-closed"></ion-icon>
+              </span>
+              <input type="password" required>
+              <label>Password</label>
+          </div>
+          <div class="remember-forgot">
+            <label><input type="checkbox">agree to the terms and conditions</label>
+          </div>
+          <button type="submit" class="btn">Register</button>
+          <div class="login-register">
+            <p>Already have an account? <a href="#wrapper" class="login-link">Login</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="homescript.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!--jquery cdn link-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+     //jquery for toggle sub menus
+     $('.menu-btn').click(function(){
+       $('.side-bar').addClass('active');
+       $('.menu-btn').css("visibility", "hidden");
+     });
+     //jquery for expand and collapse the sidebar
+     $('.close-btn').click(function(){
+       $('.side-bar').removeClass('active');
+       $('.menu-btn').css("visibility","visible");
+     });
+     //Active cancel button
+     $('.sub-btn').click(function(){
+       $(this).next('.sub-menu').slideToggle();
+       $(this).find('.dropdown').toggleClass('rotate');
+     });
+   });
+    </script> 
+</body>
+</html>

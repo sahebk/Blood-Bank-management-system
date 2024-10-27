@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DONOR</title>
+  <link rel="stylesheet" href="recipientstyle.css">
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Logo">
+    <h2 class="logo">𝕃𝕀𝔽𝔼𝕃𝕀ℕ𝔼 𝔻𝕆ℕ𝕆ℝ𝕊</h2>
+    <nav class="navigation">
+      <a href="home.html">Home<span class="icon"><ion-icon name="home"></ion-icon></span></a>
+      <a href="about.html">About</a>
+      <a href="donor.html">Donor</a>
+      <a href="recipient.html">Recipient</a>
+
+    </nav>
+  </header>
+
+  <div class="content">
+    <center><h1>ENTER RECIPIENT DETAILS</h1></center>
+    <form action="recipient.php" method="post">
+      <table border="0" width="100%">
+        <tr>
+          <td><label for="r_name">NAME <ion-icon name="person"></ion-icon> :</label></td>
+          <td><input type="text" id="r_name" name="r_name" required></td>
+        </tr>
+        <tr>
+          <td><label>GENDER <ion-icon name="transgender"></ion-icon> :</label></td>
+          <td>
+            <input type="radio" id="male" name="r_gender" value="Male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="r_gender" value="Female">
+            <label for="female">Female</label>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="r_dob">DATE OF BIRTH :</label></td>
+          <td><input type="date" id="r_dob" name="r_dob" required></td>
+        </tr>
+        <tr>
+          <td><label for="r_bloodtype">BLOOD TYPE :</label></td>
+          <td>
+            <select id="r_bloodtype" name="r_bloodtype" required>
+              <option value="A+">A+</option>
+              <option value="A-">A-</option>
+              <option value="B+">B+</option>
+              <option value="B-">B-</option>
+              <option value="AB+">AB+</option>
+              <option value="AB-">AB-</option>
+              <option value="O+">O+</option>
+              <option value="O-">O-</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="r_phno">PHONE NUMBER <ion-icon name="call"></ion-icon> :</label></td>
+          <td><input type="tel" id="r_phno" name="r_phno" pattern="[0-9]{10}" required></td>
+        </tr>
+
+        <tr>
+          <td><label for="r_email">Enter your email <ion-icon name="mail"></ion-icon> :</label>
+          <td><input type="email" id="r_email" name="r_email"></td>
+        </tr>
+        
+        <tr>
+          <td><label for="r_address">ADDRESS <ion-icon name="location"></ion-icon> :</label></td>
+          <td><textarea id="r_address" name="r_address" required></textarea></td>
+        </tr>
+      </table>
+      <br><div style="display: flex;margin-left: 500px;">
+      <input type="submit" value="Submit">
+    </div>
+    </form>
+  </div>
+
+  <script src="homescript.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  
+</body>
+</html>
